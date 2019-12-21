@@ -4,7 +4,7 @@ import '../styles/search.css';
 
 class Search extends Component {
     state = {
-        book: [],
+        books: [],
         search: ""
     }
 
@@ -23,7 +23,7 @@ class Search extends Component {
                         </form>
                     </div>
                 </div>
-                <div className = "row results bg-light mt-4">
+                <div className = "row results bg-light mt-4 pl-2 pt-2">
                     <div className="col-12">
                         <h4 class = "mb-4">Search Results</h4>
                         <Book />

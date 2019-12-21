@@ -1,3 +1,7 @@
 .search, .results {
     min-height: 20vh;
 }
+
+.results {
+    padding-right: 0;
+}
