@@ -8,9 +8,13 @@ class Saved extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Saved page</h1>
-                <Book />
+            <div className = "container">
+                <div className = "row results bg-light mt-4 pl-2 pt-2">
+                    <div className="col-12">
+                        <h4 class = "mb-4">Saved Books</h4>
+                        <Book />
+                    </div>
+                </div>
             </div>
         )
     }
