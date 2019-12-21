@@ -4,7 +4,8 @@ class Book extends Component {
     state = {
         title: "",
         author: "",
-        summary: ""
+        summary: "",
+        image: ""
     }
 
     render() {

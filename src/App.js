@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <Navbar />
         
-        <div className="container mt-5">
+        <div className="container my-5">
           <div className="row">
             <div className="col-12">
             <header>
