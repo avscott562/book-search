@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Button';
 
 class Book extends Component {
     state = {
@@ -18,8 +19,7 @@ class Book extends Component {
                         <p>{this.state.author}</p>
                     </div>
                     <div className="col-2 float-right">
-                        <button className = "btn btn-outline-secondary btn-sm">View</button>
-                        <button className = "btn btn-outline-secondary btn-sm ml-2">{window.location.pathname === "/" ? "Save" : "Delete"}</button>
+                        <Button isSaved={this.state.isSaved}/>
                     </div>
                 </div>
                 <div className = "row pl-2 pb-2">
