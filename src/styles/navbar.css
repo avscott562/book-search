@@ -1,0 +1,8 @@
+nav {
+    height: 10vh;
+    background-color: rgb(152, 190, 247);
+  }
+  
+  nav a {
+    color: black;
+  }
