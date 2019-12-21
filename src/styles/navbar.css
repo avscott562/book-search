@@ -1,8 +1,8 @@
 nav {
-    height: 10vh;
-    background-color: rgb(152, 190, 247);
+    height: 12vh;
+    /* background-color: rgb(152, 190, 247); */
   }
-  
-  nav a {
-    color: black;
+
+  .active {
+    background-color: rgb(227, 217, 235);
   }
