@@ -12,7 +12,7 @@ class Book extends Component {
 
     render() {
         return (
-            <div class = "border mb-3">
+            <div className = "border mb-3">
                 <div className="row pt-2 pl-2">
                     <div className="col-10">
                         <p>{this.state.title}</p>
@@ -24,7 +24,7 @@ class Book extends Component {
                 </div>
                 <div className = "row pl-2 pb-2">
                     <div className = "col-12">
-                        <img src={this.state.image} className = "float-left pr-4"></img>
+                        <img src={this.state.image} className = "float-left pr-4" alt={this.state.title}></img>
                         <div className = "pr-2">{this.state.summary}</div>
                     </div>
                 </div>

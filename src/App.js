@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/" component={Search}/>
           <Route exact path="/saved" component={Saved}/>
         </div>
-        <footer class="sticky-bottom mt-5 bg-secondary">Google Book Search</footer>
+        <footer className="sticky-bottom mt-5 bg-secondary">Google Book Search</footer>
       </div>
     </Router>
   );
