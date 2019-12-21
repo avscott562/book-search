@@ -14,6 +14,11 @@ class Search extends Component {
         console.log(this.state.search);
     };
 
+    searchBooks = event => {
+        event.preventDefault();
+        console.log("searching books now");
+    }
+
     render() {
         return (
             <div className = "container">
@@ -29,7 +34,10 @@ class Search extends Component {
                                     id="bookSearchInput" 
                                     placeholder = "Enter Search"
                                     onChange={this.handleInputChange}></input>
-                                <button type = "submit" className="btn btn-secondary float-right mt-2">Search</button>
+                                <button 
+                                type = "submit" 
+                                className="btn btn-secondary float-right mt-2"
+                                onClick={this.searchBooks}>Search</button>
                             </div>
                         </form>
                     </div>
