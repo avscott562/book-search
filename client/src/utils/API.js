@@ -1,10 +1,10 @@
-import 'dotenv';
+import { API_KEY } from 'dotenv';
 import axios from 'axios';
 
 export default {
     // search for books
     searchBooks: function(search) {
-        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=${process.env.API_KEY}`);
+        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=${API_KEY}`);
     },
 
     // get all books from database
