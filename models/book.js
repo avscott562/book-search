@@ -1,10 +1,10 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 // Save a reference to the Schema constructor
 const Schema = mongoose.Schema;
 
 // Using the Schema constructor, create a new UserSchema object
-let BookSchema = new Schema({
+const BookSchema = new Schema({
   // book title
   title: {
     type: String,
@@ -33,7 +33,7 @@ let BookSchema = new Schema({
 });
 
 // This creates our model from the above schema, using mongoose's model method
-let Book = mongoose.model("Book", BookSchema);
+const Book = mongoose.model("Book", BookSchema);
 
 // Export the Article model
 module.exports = Book;
