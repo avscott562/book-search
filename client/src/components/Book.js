@@ -45,7 +45,10 @@ export default function Book(props) {
                     <p>{props.authors}</p>
                 </div>
                 <div className="col-2 float-right">
-                    <Button isSaved={props.isSaved ? true : false}/>
+                    <Button 
+                      isSaved={props.isSaved ? true : false}
+                      link={props.link}
+                    />
                 </div>
             </div>
             <div className = "row pl-2 pb-2">
