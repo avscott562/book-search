@@ -31,15 +31,15 @@ class Saved extends Component {
         ]
     };
 
-    // componentDidMount() {
-    //     this.loadBooks();
-    // }
+    componentDidMount() {
+        this.loadBooks();
+    }
 
-    // loadBooks = () => {
-    //     API.getBooks()
-    //         .then(res => this.setState({ savedBooks: res.data }))
-    //         .catch(err => console.log(err));
-    // };
+    loadBooks = () => {
+        API.getBooks()
+            .then(res => this.setState({ savedBooks: res.data }))
+            .catch(err => console.log(err));
+    };
 
     render() {
         return (
