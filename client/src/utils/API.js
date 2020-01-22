@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default {
     // search for books
-    findBooks: function(search) {
+    searchBooks: function(search) {
         return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=${process.env.API_KEY}`);
     },
 
