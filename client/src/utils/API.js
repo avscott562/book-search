@@ -1,3 +1,4 @@
+import 'dotenv';
 import axios from 'axios';
 
 export default {
